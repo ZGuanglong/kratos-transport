@@ -1,6 +1,6 @@
 package kafka
 
-import "github.com/go-kratos/kratos/v2/log"
+import "github.com/tx7do/kratos-transport/log"
 
 type Logger struct {
 }

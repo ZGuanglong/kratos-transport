@@ -10,8 +10,8 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/go-kratos/kratos/v3/errors"
+	"github.com/tx7do/kratos-transport/log"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

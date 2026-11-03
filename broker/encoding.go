@@ -5,9 +5,9 @@ import (
 	"encoding/gob"
 	"errors"
 
-	"github.com/go-kratos/kratos/v2/encoding"
-	_ "github.com/go-kratos/kratos/v2/encoding/json"
-	_ "github.com/go-kratos/kratos/v2/encoding/proto"
+	"github.com/go-kratos/kratos/v3/encoding"
+	_ "github.com/go-kratos/kratos/v3/encoding/json"
+	_ "github.com/go-kratos/kratos/v3/encoding/proto"
 )
 
 func Marshal(codec encoding.Codec, msg Any) ([]byte, error) {

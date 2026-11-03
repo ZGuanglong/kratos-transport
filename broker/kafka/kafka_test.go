@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	kafkaGo "github.com/segmentio/kafka-go"
 	"github.com/stretchr/testify/assert"
 

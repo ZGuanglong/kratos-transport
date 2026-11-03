@@ -33,3 +33,7 @@ bin/
 .vscode/
 .idea/
 *.swp
+
+# 本地开发用 workspace，不提交
+go.work
+go.work.sum
