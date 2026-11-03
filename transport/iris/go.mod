@@ -1,11 +1,9 @@
 module github.com/tx7do/kratos-transport/transport/iris
 
-go 1.22
+go 1.26.0
 
-toolchain go1.22.1
 
 require (
-	github.com/go-kratos/kratos/v2 v2.8.0
 	github.com/kataras/iris/v12 v12.2.11
 	github.com/stretchr/testify v1.9.0
 	github.com/tx7do/kratos-transport v1.1.8
@@ -24,6 +22,7 @@ require (
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/flosch/pongo2/v4 v4.0.2 // indirect
 	github.com/go-kratos/aegis v0.2.0 // indirect
+	github.com/go-kratos/kratos/v3 v3.0.0
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-playground/form/v4 v4.2.1 // indirect
@@ -68,7 +67,7 @@ require (
 	go.opentelemetry.io/proto/otlp v1.3.1 // indirect
 	golang.org/x/crypto v0.25.0 // indirect
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
-	golang.org/x/net v0.27.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
 	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	golang.org/x/time v0.5.0 // indirect

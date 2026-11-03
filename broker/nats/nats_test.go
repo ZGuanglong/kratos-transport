@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	natsGo "github.com/nats-io/nats.go"
 
 	"github.com/stretchr/testify/assert"

@@ -1,11 +1,9 @@
 module github.com/tx7do/kratos-transport/broker/stomp
 
-go 1.21
+go 1.26.0
 
-toolchain go1.22.1
 
 require (
-	github.com/go-kratos/kratos/v2 v2.8.0
 	github.com/go-stomp/stomp/v3 v3.1.1
 	github.com/stretchr/testify v1.9.0
 	github.com/tx7do/kratos-transport v1.1.8
@@ -16,6 +14,7 @@ require (
 require (
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/go-kratos/kratos/v3 v3.0.0
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/google/uuid v1.6.0 // indirect
@@ -30,7 +29,7 @@ require (
 	go.opentelemetry.io/otel/metric v1.28.0 // indirect
 	go.opentelemetry.io/otel/sdk v1.28.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.3.1 // indirect
-	golang.org/x/net v0.27.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
 	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240723171418-e6d459c13d2a // indirect

@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/encoding"
+	"github.com/go-kratos/kratos/v3/encoding"
 )
 
 type ServerOption func(*Server)

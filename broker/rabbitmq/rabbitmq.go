@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/tx7do/kratos-transport/broker"
 	"github.com/tx7do/kratos-transport/tracing"

@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/encoding"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/encoding"
+	"github.com/tx7do/kratos-transport/log"
+	"github.com/go-kratos/kratos/v3/transport"
 
 	"github.com/philippseith/signalr"
 )

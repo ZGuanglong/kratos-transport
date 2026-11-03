@@ -3,8 +3,8 @@ package thrift
 import (
 	"crypto/tls"
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/tx7do/kratos-transport/log"
+	"github.com/go-kratos/kratos/v3/registry"
 )
 
 type clientOptions struct {

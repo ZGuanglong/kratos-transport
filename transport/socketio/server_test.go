@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	socketio "github.com/googollee/go-socket.io"
 )
 

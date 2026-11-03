@@ -1,12 +1,10 @@
 module github.com/tx7do/kratos-transport/broker/pulsar
 
-go 1.22.0
+go 1.26.0
 
-toolchain go1.22.1
 
 require (
 	github.com/apache/pulsar-client-go v0.13.0
-	github.com/go-kratos/kratos/v2 v2.8.0
 	github.com/google/uuid v1.6.0
 	github.com/stretchr/testify v1.9.0
 	github.com/tx7do/kratos-transport v1.1.8
@@ -29,6 +27,7 @@ require (
 	github.com/dvsekhvalnov/jose2go v1.7.0 // indirect
 	github.com/frankban/quicktest v1.14.3 // indirect
 	github.com/go-jose/go-jose/v4 v4.0.3 // indirect
+	github.com/go-kratos/kratos/v3 v3.0.0
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/godbus/dbus v0.0.0-20190726142602-4481cbc300e2 // indirect
@@ -70,7 +69,7 @@ require (
 	go.uber.org/atomic v1.11.0 // indirect
 	golang.org/x/crypto v0.25.0 // indirect
 	golang.org/x/mod v0.19.0 // indirect
-	golang.org/x/net v0.27.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
 	golang.org/x/oauth2 v0.21.0 // indirect
 	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/term v0.22.0 // indirect

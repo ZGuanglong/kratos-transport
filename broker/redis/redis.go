@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	"github.com/gomodule/redigo/redis"
 	"github.com/tx7do/kratos-transport/broker"
 )

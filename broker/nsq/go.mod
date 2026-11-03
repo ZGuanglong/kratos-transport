@@ -2,7 +2,6 @@ module github.com/tx7do/kratos-transport/broker/nsq
 
 go 1.26.0
 
-
 require (
 	github.com/google/uuid v1.6.0
 	github.com/nsqio/go-nsq v1.1.0

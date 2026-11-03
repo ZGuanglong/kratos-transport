@@ -3,7 +3,7 @@ package socketio
 import (
 	"crypto/tls"
 
-	"github.com/go-kratos/kratos/v2/encoding"
+	"github.com/go-kratos/kratos/v3/encoding"
 	socketIo "github.com/googollee/go-socket.io"
 )
 

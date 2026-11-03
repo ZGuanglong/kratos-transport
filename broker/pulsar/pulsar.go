@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/apache/pulsar-client-go/pulsar"
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	"github.com/google/uuid"
 
 	"github.com/tx7do/kratos-transport/broker"

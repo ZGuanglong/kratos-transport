@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/encoding"
+	"github.com/go-kratos/kratos/v3/encoding"
 )
 
 // default byte order is little endian.

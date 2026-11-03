@@ -2,7 +2,7 @@ package gin
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	"net"
 	"net/http"
 	"net/http/httputil"

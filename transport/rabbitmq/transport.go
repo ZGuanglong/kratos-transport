@@ -1,8 +1,8 @@
 package rabbitmq
 
 import (
-	"github.com/go-kratos/kratos/v2/selector"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/selector"
+	"github.com/go-kratos/kratos/v3/transport"
 )
 
 const (

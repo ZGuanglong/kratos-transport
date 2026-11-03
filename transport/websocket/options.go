@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/encoding"
+	"github.com/go-kratos/kratos/v3/encoding"
 )
 
 type PayloadType uint8

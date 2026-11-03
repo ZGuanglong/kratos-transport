@@ -9,10 +9,10 @@ import (
 
 	hertz "github.com/cloudwego/hertz/pkg/app/server"
 
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/middleware"
-	"github.com/go-kratos/kratos/v2/transport"
-	kHttp "github.com/go-kratos/kratos/v2/transport/http"
+	"github.com/tx7do/kratos-transport/log"
+	"github.com/go-kratos/kratos/v3/middleware"
+	"github.com/go-kratos/kratos/v3/transport"
+	kHttp "github.com/go-kratos/kratos/v3/transport/http"
 )
 
 var (

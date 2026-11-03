@@ -3,8 +3,8 @@ package gozero
 import (
 	"context"
 	"fmt"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/tx7do/kratos-transport/log"
+	"github.com/go-kratos/kratos/v3/transport"
 	"github.com/zeromicro/go-zero/core/logx"
 	"github.com/zeromicro/go-zero/core/service"
 	"github.com/zeromicro/go-zero/rest"

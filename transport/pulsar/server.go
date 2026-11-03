@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/transport"
 	"github.com/tx7do/kratos-transport/broker"
 	"github.com/tx7do/kratos-transport/broker/pulsar"
 )

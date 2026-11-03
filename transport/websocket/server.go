@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/encoding"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/encoding"
+	"github.com/go-kratos/kratos/v3/transport"
 
 	ws "github.com/gorilla/websocket"
 

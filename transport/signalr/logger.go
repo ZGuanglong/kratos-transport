@@ -1,6 +1,6 @@
 package signalr
 
-import "github.com/go-kratos/kratos/v2/log"
+import "github.com/tx7do/kratos-transport/log"
 
 type logger struct {
 	log.Logger

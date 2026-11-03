@@ -2,7 +2,6 @@ module github.com/tx7do/kratos-transport/transport/nsq
 
 go 1.26.0
 
-
 require (
 	github.com/stretchr/testify v1.9.0
 	github.com/tx7do/kratos-transport v1.1.8

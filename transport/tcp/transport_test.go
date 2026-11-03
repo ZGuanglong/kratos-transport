@@ -2,7 +2,7 @@ package tcp
 
 import (
 	"context"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/transport"
 	"reflect"
 	"sort"
 	"testing"

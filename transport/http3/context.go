@@ -4,15 +4,29 @@ import (
 	"context"
 	"encoding/json"
 	"encoding/xml"
+	"fmt"
 	"io"
 	"net/http"
 	"net/url"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/middleware"
-	"github.com/go-kratos/kratos/v2/transport/http/binding"
+	"github.com/go-kratos/kratos/v3/encoding"
+	_ "github.com/go-kratos/kratos/v3/encoding/form"
+	"github.com/go-kratos/kratos/v3/middleware"
 	"github.com/gorilla/mux"
 )
+
+// bindValues 用 form codec 把 url.Values 绑定到 v（kratos v3 移除了 transport/http/binding 包）。
+func bindValues(values url.Values, v interface{}) error {
+	if values == nil || len(values) == 0 {
+		return nil
+	}
+	codec := encoding.GetCodec("form")
+	if codec == nil {
+		return fmt.Errorf("form codec not registered")
+	}
+	return codec.Unmarshal([]byte(values.Encode()), v)
+}
 
 var _ Context = (*wrapper)(nil)
 
@@ -92,9 +106,14 @@ func (c *wrapper) Middleware(h middleware.Handler) middleware.Handler {
 	return middleware.Chain(c.router.srv.ms...)(h)
 }
 func (c *wrapper) Bind(v interface{}) error      { return c.router.srv.dec(c.req, v) }
-func (c *wrapper) BindVars(v interface{}) error  { return binding.BindQuery(c.Vars(), v) }
-func (c *wrapper) BindQuery(v interface{}) error { return binding.BindQuery(c.Query(), v) }
-func (c *wrapper) BindForm(v interface{}) error  { return binding.BindForm(c.req, v) }
+func (c *wrapper) BindVars(v interface{}) error  { return bindValues(c.Vars(), v) }
+func (c *wrapper) BindQuery(v interface{}) error { return bindValues(c.Query(), v) }
+func (c *wrapper) BindForm(v interface{}) error {
+	if err := c.req.ParseForm(); err != nil {
+		return err
+	}
+	return bindValues(c.req.Form, v)
+}
 func (c *wrapper) Returns(v interface{}, err error) error {
 	if err != nil {
 		return err

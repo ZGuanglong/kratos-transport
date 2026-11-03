@@ -11,8 +11,7 @@ import (
 	"github.com/kataras/iris/v12/middleware/logger"
 	"github.com/kataras/iris/v12/middleware/recover"
 
-	kHttp "github.com/go-kratos/kratos/v2/transport/http"
-	"github.com/go-kratos/kratos/v2/transport/http/binding"
+	kHttp "github.com/go-kratos/kratos/v3/transport/http"
 
 	"github.com/stretchr/testify/assert"
 
@@ -75,7 +74,7 @@ func GetHygrothermograph(ctx context.Context, cli *kHttp.Client, in *api.Hygroth
 	var out api.Hygrothermograph
 
 	pattern := "/hygrothermograph"
-	path := binding.EncodeURL(pattern, in, true)
+	path := kHttp.BuildPath(pattern, in, kHttp.WithQueryParams())
 
 	opts = append(opts, kHttp.Operation("/GetHygrothermograph"))
 	opts = append(opts, kHttp.PathTemplate(pattern))

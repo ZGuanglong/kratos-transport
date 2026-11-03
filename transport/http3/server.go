@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/middleware"
-	kHttp "github.com/go-kratos/kratos/v2/transport/http"
+	"github.com/tx7do/kratos-transport/log"
+	"github.com/go-kratos/kratos/v3/middleware"
+	kHttp "github.com/go-kratos/kratos/v3/transport/http"
 
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/transport"
 	"github.com/gorilla/mux"
 	"github.com/quic-go/quic-go/http3"
 )

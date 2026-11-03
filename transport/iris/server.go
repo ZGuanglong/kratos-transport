@@ -9,9 +9,9 @@ import (
 
 	"github.com/kataras/iris/v12"
 
-	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-kratos/kratos/v3/errors"
+	"github.com/tx7do/kratos-transport/log"
+	"github.com/go-kratos/kratos/v3/transport"
 )
 
 var (

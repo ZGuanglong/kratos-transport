@@ -12,7 +12,7 @@ import (
 	semConv "go.opentelemetry.io/otel/semconv/v1.12.0"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 
 	stompV3 "github.com/go-stomp/stomp/v3"
 	frameV3 "github.com/go-stomp/stomp/v3/frame"

@@ -5,7 +5,6 @@ go 1.26.0
 require (
 	github.com/99designs/gqlgen v0.17.49
 	github.com/apache/thrift v0.20.0
-	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/google/uuid v1.6.0
 	github.com/stretchr/testify v1.11.1
 	github.com/vektah/gqlparser/v2 v2.5.16

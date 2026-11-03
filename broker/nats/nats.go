@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	kProto "github.com/go-kratos/kratos/v2/encoding/proto"
+	kProto "github.com/go-kratos/kratos/v3/encoding/proto"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/tx7do/kratos-transport/log"
 	natsGo "github.com/nats-io/nats.go"
 
 	"github.com/tx7do/kratos-transport/broker"
